@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+
+<body>
+    <form action="" autocomplete="on">
+        <fieldset>
+            <legend>user information</legend>
+            <label for="un">USER_NAME</label>
+            <input type="text" id="un" placeholder="enter your username" name="username" value="shahil" required><br>
+            <label for="e">USER_EMAIL</label>
+            <input type="email" id="e" placeholder="example@gmail.com" name="USER_EMAIL" required><br>
+            <label for="p">PASSWORD</label>
+            <input type="password" id="p" placeholder="enter your password" name="password" minlength="6" maxlength="15"
+                required><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>personal information</legend>
+            <label for="age">USER_AGE</label>
+            <input type="number" name="" id="age" placeholder="enter your age" name="age"><br>
+            <label for="ph">PHONE_NUMBER</label>
+            <input type="tel" name="" id="ph" name="PHONE_NUMBER" placeholder="enter your phone number"><br>
+            <label for="ua">ADDRESS</label> <br>
+            <textarea name="useraddress" id="ua" rows="10" cols="40"></textarea> <br>
+        </fieldset>
+        <fieldset>
+            <legend>timing</legend>
+            <label for="d"></label>
+            <input type="date" id="d"><br>
+            <label for="t">time</label>
+            <input type="time" id="t"><br>
+            <label for="w">week</label>
+            <input type="week" id="w"><br>
+            <label for="m">month</label>
+            <input type="month" id="m">
+        </fieldset>
+
+        <fieldset>
+            <legend>checkbox and radio button</legend>
+            <label for="html">html</label>
+            <input type="checkbox" value="html" id="html" name="sub1">
+            <label for="css">css</label>
+            <input type="checkbox" id="css" name="sub2" value="css">
+            <label for="js">js</label>
+            <input type="checkbox" id="js" name="sub3" value="js"><br><br>
+            <h4>select gender</h4>
+            <label for="m">male</label>
+            <input type="radio" id="m" name="gender" value="male"><br>
+            <label for="f">female</label>
+            <input type="radio" id="f" value="female" name="gender"><br>
+            <label for="o">others</label>
+            <input type="radio" id="o" value="other" name="gender">
+        </fieldset>
+        <fieldset>
+            <legend>select option</legend>
+            <label for="s">select subject</label>
+            <select name="course" id="">
+                <optgroup label="frondend">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JS</option>
+                </optgroup>
+
+                <optgroup label="backend">
+                    <option value="python">PYTHON</option>
+                    <option value="python">C</option>
+                    <option value="python">C++</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>range</legend>
+            <label for="sal">salary</label>
+        <input type="range" min="10000" max="50000" name="sal" id="sal"> 
+        </fieldset>
+        <fieldset>
+            <legend>button</legend>
+            <label for="btn">buttons</label>
+            <button type="submit">signup</button>
+            <button type="reset">reset</button>
+        </fieldset>
+        
+
+
+
+        <input type="submit">
+
+    </form>
+</body>
+
+</html>
